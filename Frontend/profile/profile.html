@@ -1,0 +1,112 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Employee MS
+  </title>
+  <script src="profile.js" defer></script>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100">
+  <div class="flex">
+   <!-- Sidebar -->
+   <div class="w-1/4 bg-gray-800 h-screen p-4">
+    <h1 class="text-white text-2xl font-bold mb-8">
+     Employee MS
+    </h1>
+    <ul>
+     <li class="mb-4">
+      <a class="text-white flex items-center" href="../Dashboard/Dashboard.html">
+       <i class="fas fa-tachometer-alt mr-2">
+       </i>
+       Dashboard
+      </a>
+     </li>
+     <li class="mb-4">
+      <a class="text-white bg-green-500 p-2 rounded flex items-center" href="#">
+       <i class="fas fa-user mr-2">
+       </i>
+       My Profile
+      </a>
+     </li>
+     <li class="mb-4">
+      <a class="text-white flex items-center" href="../leaves/leaves.html">
+       <i class="fas fa-calendar-alt mr-2">
+       </i>
+       Leave
+      </a>
+     </li>
+     <!-- <li class="mb-4">
+      <a class="text-white flex items-center" href="../salary/salary.html">
+       <i class="fas fa-dollar-sign mr-2">
+       </i>
+       Salary
+      </a>
+     </li> -->
+     <li class="mb-4">
+      <a class="text-white flex items-center" href="../setting/setting.html">
+       <i class="fas fa-cog mr-2">
+       </i>
+       Setting
+      </a>
+     </li>
+    </ul>
+   </div>
+   <!-- Main Content -->
+   <div class="w-3/4 p-8">
+    <div class="flex justify-between items-center mb-8">
+     <h2 class="text-2xl font-bold" id="welcomeMessage">
+      Welcome, User
+     </h2>
+     <button class="bg-green-500 text-white px-4 py-2 rounded" onclick="window.location.href = '../Login/login.html'">
+      Logout
+     </button>
+    </div>
+    <div class="bg-white p-8 rounded shadow-md">
+     <h3 class="text-xl font-bold mb-4">
+      Employee Details
+     </h3>
+     <p>
+      <strong>
+       Name:
+      </strong>
+      <span id="employeeName">N/A</span>
+     </p>
+     <p>
+      <strong>
+       Employee ID:
+      </strong>
+      <span id="employeeId">N/A</span>
+     </p>
+     <p>
+      <strong>
+       Date of Birth:
+      </strong>
+      <span id="dob">N/A</span>
+     </p>
+     <p>
+      <strong>
+       Gender:
+      </strong>
+      <span id="gender">N/A</span>
+     </p>
+     <p>
+      <strong>
+       Department:
+      </strong>
+      <span id="department">N/A</span>
+     </p>
+     <p>
+      <strong>
+       Marital Status:
+      </strong>
+      <span id="maritalStatus">N/A</span>
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

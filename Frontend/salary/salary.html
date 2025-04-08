@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>Employee MS - Salary History</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <div class="flex">
+        <!-- Sidebar -->
+        <div class="w-1/5 bg-gray-800 h-screen text-white">
+            <div class="p-4 text-center text-2xl font-semibold">
+                Employee MS
+            </div>
+            <ul class="mt-10">
+                <li class="py-2 px-4 hover:bg-gray-700">
+                    <i class="fas fa-tachometer-alt mr-2"></i> Dashboard
+                </li>
+                <li class="py-2 px-4 hover:bg-gray-700">
+                    <i class="fas fa-user mr-2"></i> My Profile
+                </li>
+                <li class="py-2 px-4 hover:bg-gray-700">
+                    <i class="fas fa-calendar-alt mr-2"></i> Leave
+                </li>
+                <li class="py-2 px-4 bg-green-500">
+                    <i class="fas fa-money-bill-wave mr-2"></i> Salary
+                </li>
+                <li class="py-2 px-4 hover:bg-gray-700">
+                    <i class="fas fa-cog mr-2"></i> Setting
+                </li>
+            </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="w-4/5">
+            <div class="bg-green-500 p-4 flex justify-between items-center">
+                <div class="text-white text-2xl">Welcome, asif</div>
+                <button class="bg-gray-700 text-white px-4 py-2 rounded" onclick="window.location.href = '../Login/login.html'">Logout</button>
+            </div>
+            <div class="p-8">
+                <div class="bg-white p-6 rounded shadow">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-2xl font-semibold">Salary History</h2>
+                        <input type="text" placeholder="Search By Emp ID" class="border rounded px-4 py-2">
+                    </div>
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr>
+                                <th class="border p-2">SNO</th>
+                                <th class="border p-2">EMP ID</th>
+                                <th class="border p-2">SALARY</th>
+                                <th class="border p-2">ALLOWANCE</th>
+                                <th class="border p-2">DEDUCTION</th>
+                                <th class="border p-2">TOTAL</th>
+                                <th class="border p-2">PAY DATE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border p-2">1</td>
+                                <td class="border p-2">asif113</td>
+                                <td class="border p-2">600</td>
+                                <td class="border p-2">50</td>
+                                <td class="border p-2">30</td>
+                                <td class="border p-2">620</td>
+                                <td class="border p-2">9/15/2024</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

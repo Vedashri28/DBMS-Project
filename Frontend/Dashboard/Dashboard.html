@@ -1,0 +1,86 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Employee MS
+  </title>
+  <script defer src="dashboard.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100">
+  <div class="flex h-screen">
+   <!-- Sidebar -->
+   <div class="bg-gray-800 text-white w-64 p-4">
+    <div class="text-2xl font-bold mb-8" style="font-family: 'Great Vibes', cursive;">
+     Employee MS
+    </div>
+    <ul>
+     <li class="mb-4">
+      <a class="flex items-center p-2 bg-green-500 rounded" href="#">
+       <i class="fas fa-tachometer-alt mr-2">
+       </i>
+       Dashboard
+      </a href="#">
+     </li>
+     <li class="mb-4">
+      <a class="flex items-center p-2" href="../Profile/profile.html">
+       <i class="fas fa-user mr-2">
+       </i>
+       My Profile
+      </a>
+     </li>
+     <li class="mb-4">
+      <a class="flex items-center p-2" href="../leaves/leaves.html">
+       <i class="fas fa-calendar-alt mr-2">
+       </i>
+       Leave
+      </a >
+     </li>
+     <!-- <li class="mb-4">
+      <a class="flex items-center p-2" href="../salary/salary.html">
+       <i class="fas fa-dollar-sign mr-2">
+       </i>
+       Salary
+      </a >
+     </li> -->
+     <li class="mb-4">
+      <a class="flex items-center p-2" href="../setting/setting.html">
+       <i class="fas fa-cog mr-2">
+       </i>
+       Setting
+      </a >
+     </li>
+    </ul>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 p-4">
+    <div class="flex justify-between items-center mb-8">
+     <div class="text-xl">
+      Welcome, <span id="username">User</span>
+     </div>
+     <button class="bg-gray-700 text-white px-4 py-2 rounded" onclick="window.location.href = '../Login/login.html'">
+      Logout
+     </button>
+    </div>
+    <div class="bg-white p-6 rounded shadow">
+     <div class="flex items-center">
+      <img alt="User icon" class="w-12 h-12 mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/Ri4siruCpelpPCGyVh8mOnAamMfEJN5sR8h85MLKHXc.jpg" width="50"/>
+      <div>
+       <div class="text-lg font-bold">
+        Welcome Back
+       </div>
+       <div class="text-2xl font-bold">
+        <span id="username2">User</span>
+
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
